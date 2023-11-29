@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+#client-list {
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+}
+
+.flash_message {
+  padding-top: 0px;
+  position: absolute;
+  right: 10px;
+  top: 5px
+}
+
+.mainTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.createButton {
+  display: flex;
+}
+
+.createClientButton {
+  margin-right: 10px;
+}
+
+.adminMenuButton {
+  margin-right: 10px;
+}
+
+.createProjectButton {
+  margin-right: 10px;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.projectDetailContainer {
+  position: relative;
+}
+
+.closePojectDetails {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.titleContainer {
+  margin-bottom: 30px;
+}
+
+.addClientModal {
+  position: absolute;
+  height: 30px;
+}
+
+.projectCard {
+  position: relative;
+}
+
+.editProjectButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.projectDuration {
+  color: red
+}
+
+.modalBox {
+  border-radius: 10px;
+  outline: hidden;
+}
+
+.subLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logInButton {
+  margin-right: 10px;
+}
+
+.errorMessage {
+  color: red;
+}
+
+/* .adminMenuButton {
+  display: red;
+}
+
+.adminMenuCloseButton {
+  color: red;
+} */
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
