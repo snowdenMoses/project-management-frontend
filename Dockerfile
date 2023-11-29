@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:16-alpine as builder
 
 WORKDIR /app
 
@@ -8,20 +8,11 @@ RUN npm install
 
 COPY . .
 
-# Run npm run build
-CMD ["npm", "start"]
-
-# FROM nginx
+Run npm run build
 
 
-# for multicontainer docker
-# EXPOSE 80
-
-# for single container docker
-# EXPOSE 80
-
-# for multicontainer docker using nginx routing
-# COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-# COPY --from=builder /app/build  /usr/share/nginx/html
+FROM nginx
+EXPOSE 80
+COPY --from=builder /app/build  /usr/share/nginx/html
 
 
